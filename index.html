@@ -344,7 +344,7 @@
     </div>
 
     <script>
-      // 換成你的後端網址
+      // ✅ 用「全部縣市」的 API，不要 /city/:locationName
       const API_URL = "https://weater-allcity.zeabur.app/api/weather";
 
       let allLocations = null; // CWA 的 records.location 陣列
@@ -512,7 +512,7 @@
         pill.textContent = `📍 ${text}`;
       }
 
-      // 只抓一次全部資料
+      // 只抓一次全部縣市資料
       async function ensureAllLocations() {
         if (allLocations) return;
 
